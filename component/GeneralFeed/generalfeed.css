@@ -1,0 +1,82 @@
+.general__newpost{
+    margin: 30px 0 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1px;
+}
+
+.newpost__input {
+    text-overflow: ellipsis;
+    background: unset;
+    border: 2px solid #adadad;
+    padding: 10px;
+    width: 300px;
+    display: inline-block;
+    font-size: 24px;
+    color: antiquewhite;
+    grid-area: input;
+}
+
+.newpost__submit-btn {
+    width: 100%;
+    background: unset;
+    padding: 15px 10px;
+    border: 2px solid #00ff88;    
+    grid-area: submit;
+    font-size: 18px;
+    font-weight: 600;
+    color: #dcdcdc;
+}
+.newpost__cancel-btn {
+    background: unset;
+    padding: 15px 10px;
+    border: 2px solid #ff8080;
+    grid-area: cancel;
+    font-size: 18px;
+    font-weight: 600;
+    color: #dcdcdc;
+}
+.general__list{
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.general__item {
+    white-space: normal;
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid #cdcdcd;
+    border-radius: 10px;
+    display: grid;
+    grid-template-areas: "author comments" "text text";
+    transition: all .3s;
+}
+.general__item:hover {
+    border: 2px solid #00ff88;
+}
+
+.general__item-title {
+    white-space: nowrap;
+    grid-area: author;
+    text-align: center;
+    color: #cdcdcd;
+    font-size: 20px;
+}
+.general__item-p {
+    word-break: break-word;
+    margin: 10px;
+    color: #e3e3e3;
+    font-size: 24px;
+    font-weight: 600;
+    grid-area: text;
+}
+.general__comments{
+    white-space: nowrap;
+    grid-area: comments;
+    text-align: right;
+    color: #828282;
+    font-size: 20px;
+}

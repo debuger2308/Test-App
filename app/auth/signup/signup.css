@@ -1,0 +1,168 @@
+.signup {
+    width: 100%;
+}
+
+
+.main__signup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signup__title {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 34px;
+    color: #d3d3d3;
+    font-weight: 600;
+}
+
+.title-color {
+    color: #00ff88;
+}
+
+.signup__form {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signup__input {
+    border-radius: 4px;
+    width: 350px;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 24px;
+    background-color: #ffffffde;
+}
+
+.signup__input::placeholder {
+    font-size: 20px;
+    color: #71717162;
+}
+
+.signup__input:focus::placeholder {
+    color: #000000;
+}
+
+.signup__errror-msg {
+    font-weight: 600;
+    width: 300px;
+    font-size: 20px;
+    color: #bf1650;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+
+.signup__submit-btn {
+    position: relative;
+    transition: all .3s;
+    color: #bebebe;
+    font-weight: 600;
+    margin-top: 20px;
+    padding: 5px 10px;
+    font-size: 24px;
+    border: 2px solid #00ff88;
+    text-shadow: 1px 1px 1px #000;
+    background-color: unset;
+}
+
+.signup__submit-btn:hover {
+    color: #fff;
+}
+
+.signup__submit-btn:disabled {
+    background-color: #7d7d7d;
+    border: 2px solid #f1f1f1;
+}
+
+.signup__submit-btn:disabled:hover {
+    color: #bebebe;
+}
+
+
+.signup__proftype-title {
+    margin-right: 10px;
+    color: #bebebe;
+    display: inline;
+    font-size: 20px;
+}
+
+.signup__proftype-fieldset {
+    margin: 30px 0 10px;
+}
+
+.signup__radio-label {
+    font-size: 20px;
+    cursor: pointer;
+
+}
+
+.signup__radio-label {
+    color: #7d7d7d;
+    user-select: none;
+    padding: 7px;
+    border: 2px solid #1c1c1c;
+}
+
+.signup__radio-label:hover {
+    color: #a5a5a5;
+}
+
+.signup__radio-label:first-of-type {
+    margin-right: 1px;
+}
+
+.signup__radio-btn {
+    display: none;
+}
+
+.signup__radio-btn:checked+.signup__radio-label {
+    color: #ffffff;
+    background-color: #019b53;
+    border: 2px solid #bababa;
+}
+
+
+
+
+
+.loader {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 5px dotted #FFF;
+    border-radius: 50%;
+    display:none;
+    top: 5px;
+    transform: translateY(50%);
+    left: -40px;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loader--active {
+    display: inline-block;
+}
+
+.signup__message--access{
+    font-weight: 600;
+    width: 300px;
+    font-size: 20px;
+    color: #019b53;
+    text-align: center;
+    margin-top: 10px;
+}
