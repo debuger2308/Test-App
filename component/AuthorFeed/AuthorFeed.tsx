@@ -33,11 +33,12 @@ const AuthorFeed = ({ session }: { session: Session | null }) => {
         }
         getData()
     }, [])
-
+    console.log(posts);
 
     return (
         <div className="author">
-
+            {filterPosts(session?.user.user_metadata.nickname, posts).length === 0
+                && <h3 className="author__item-title">You have no posts</h3>}
             {filterPosts(session?.user.user_metadata.nickname, posts)?.map((item: Post) => {
                 return (
                     <Link href={`/general/${item.id}`} key={item.id} className="author__item">
